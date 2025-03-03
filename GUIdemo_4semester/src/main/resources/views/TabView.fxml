@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="703.0" stylesheets="@../styles.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <tabs>
+        <Tab text="Production">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+        </Tab>
+        <Tab text="Status">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+        </Tab>
+        <Tab text="Inventory">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView layoutX="26.0" layoutY="40.0" prefHeight="429.0" prefWidth="647.0" styleClass="tableView">
+                            <columns>
+                        <TableColumn fx:id="ID" prefWidth="50.0" text="ID" styleClass="column"/>
+                                <TableColumn fx:id="item" prefWidth="424.0000228881836" text="Item" styleClass="column" />
+                                <TableColumn fx:id="available" minWidth="0.0" prefWidth="92.66665649414062" text="Available" styleClass="column" />
+                                <TableColumn fx:id="inStock" prefWidth="79.33333333333337" text="In stock" styleClass="column"/>
+                            </columns>
+                        </TableView>
+                        <Label layoutX="27.0" layoutY="13.0" text="Warehouse:" styleClass="labels">
+                        </Label>
+                        <ChoiceBox fx:id="warehouseDropdown" layoutX="114.0" layoutY="10.0" prefWidth="150.0" styleClass="warehouseChoice" />
+                        <Button fx:id="editButton" layoutX="14.0" layoutY="460.0" prefHeight="35.0" prefWidth="53.0" styleClass="editButton">
+                            <graphic>
+                                <ImageView fitHeight="30" fitWidth="30">
+                                    <Image url="@../com/example/guidemo_4semester/editButtonImage.png" />
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="addButton" layoutX="80.0" layoutY="482.0" prefHeight="30.0" prefWidth="50.0" styleClass="addButton" text="Add" wrapText="true" />
+                        <Button fx:id="removeButton" layoutX="149.0" layoutY="482.0" prefHeight="30.0" prefWidth="50.0" styleClass="removeButton" text="Remove" wrapText="true" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
