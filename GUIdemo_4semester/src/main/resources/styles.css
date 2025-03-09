@@ -49,6 +49,20 @@
     -fx-padding: 5px 10px;
     -fx-font-size: 12px;
 }
+.startProdButton{
+    -fx-background-color: #69558F;
+    -fx-background-radius: 20px;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 10px;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 30px;
+    -fx-wrap-text: true;
+    -fx-border-color: transparent;
+    -fx-border-radius: 25px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 2);
+}
 .removeButton:hover {
     -fx-background-color: #584478;
 }
