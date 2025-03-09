@@ -10,9 +10,9 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="703.0" stylesheets="@../styles.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="703.0" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="703.0" stylesheets="@../styles.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
     <tabs>
         <Tab text="Production">
             <content>
@@ -30,13 +30,13 @@
                     <children>
                         <TableView layoutX="26.0" layoutY="40.0" prefHeight="429.0" prefWidth="647.0" styleClass="tableView">
                             <columns>
-                        <TableColumn fx:id="ID" prefWidth="50.0" text="ID" styleClass="column"/>
-                                <TableColumn fx:id="item" prefWidth="424.0000228881836" text="Item" styleClass="column" />
-                                <TableColumn fx:id="available" minWidth="0.0" prefWidth="92.66665649414062" text="Available" styleClass="column" />
-                                <TableColumn fx:id="inStock" prefWidth="79.33333333333337" text="In stock" styleClass="column"/>
+                        <TableColumn fx:id="ID" prefWidth="50.0" styleClass="column" text="ID" />
+                                <TableColumn fx:id="item" prefWidth="424.0000228881836" styleClass="column" text="Item" />
+                                <TableColumn fx:id="available" minWidth="0.0" prefWidth="92.66665649414062" styleClass="column" text="Available" />
+                                <TableColumn fx:id="inStock" prefWidth="79.33333333333337" styleClass="column" text="In stock" />
                             </columns>
                         </TableView>
-                        <Label layoutX="27.0" layoutY="13.0" text="Warehouse:" styleClass="labels">
+                        <Label layoutX="27.0" layoutY="13.0" styleClass="labels" text="Warehouse:">
                         </Label>
                         <ChoiceBox fx:id="warehouseDropdown" layoutX="114.0" layoutY="10.0" prefWidth="150.0" styleClass="warehouseChoice" />
                         <Button fx:id="editButton" layoutX="14.0" layoutY="460.0" prefHeight="35.0" prefWidth="53.0" styleClass="editButton">
@@ -54,3 +54,5 @@
         </Tab>
     </tabs>
 </TabPane>
+   <Button fx:id="emergencyStopButton" layoutX="508.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="195.0" styleClass="emergencyButton" text="EMERGENCY STOP" wrapText="true" />
+</AnchorPane>
