@@ -41,12 +41,7 @@
                            <Font name="System Bold" size="18.0" />
                         </font>
                      </Label>
-                     <Button fx:id="editButton1" prefHeight="35.0" prefWidth="53.0" styleClass="editButton" />
-                     <ImageView fx:id="editQueueButton" fitHeight="30" fitWidth="30" layoutX="658.0" layoutY="534.0">
-                        <image>
-                           <Image url="@../com/example/guidemo_4semester/editButtonImage.png" />
-                        </image>
-                     </ImageView>
+                      <Button fx:id="editQueueButton" layoutX="630.0" layoutY="515.0" prefHeight="35.0" prefWidth="53.0" styleClass="editButton" />
                      <Label layoutX="66.0" layoutY="30.0" prefHeight="20.0" prefWidth="219.0" text="Add new production to queue">
                         <font>
                            <Font name="System Bold" size="14.0" />
@@ -83,6 +78,11 @@
                            <Font name="System Bold" size="13.0" />
                         </font>
                      </Label>
+                        <ImageView fx:id="editQueuePicButton" fitHeight="30" fitWidth="30" layoutX="657.0" layoutY="537.0">
+                            <Image url="@../com/example/guidemo_4semester/editButtonImage.png" />
+                        </ImageView>
+                     <Separator layoutY="57.0" prefHeight="10.0" prefWidth="348.0" />
+                     <Separator layoutY="330.0" prefHeight="10.0" prefWidth="348.0" />
                   </children></AnchorPane>
             </content>
         </Tab>
@@ -115,6 +115,7 @@
                            <Font name="System Bold" size="14.0" />
                         </font>
                      </Label>
+                      <Button fx:id="addComponentButton" layoutX="613.0" layoutY="11.0" prefHeight="30.0" prefWidth="50.0" styleClass="addButton" text="Add" wrapText="true" />
                      <HBox layoutX="5.0" layoutY="90.0" prefHeight="29.0" prefWidth="200.0" spacing="5.0">
                         <children>
                            <Label text="Current Status:" />
